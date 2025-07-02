@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COP SINUPA 2025 - Simulação das Nações Unidas Pouso Alegre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%231e3a8a'/><circle cx='50' cy='50' r='35' fill='%23f59e0b'/><text x='50' y='60' text-anchor='middle' fill='white' font-size='30' font-weight='bold'>S</text></svg>" alt="SINUPA Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>COP SINUPA 2025</h1>
+                        <p>Simulação das Nações Unidas Pouso Alegre</p>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link inicio">Início</a>
+                    <a href="#about" class="nav-link sobre">Sobre</a>
+                    <a href="#challenges" class="nav-link desafios">Desafios</a>
+                    <a href="#ranking" class="nav-link ranking">Ranking</a>
+                    <button class="nav-link entrar" id="loginBtn">Entrar</button>
+                </div>
+                <div class="hamburger-menu" id="hamburgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">1ª Edição</div>
+                <h1 class="hero-title">COP SINUPA 2025</h1>
+                <h2 class="hero-subtitle">Mineração no Brasil e Impacto Ambiental</h2>
+                <p class="hero-description">Participe da simulação da Conferência das Partes focada nos desafios ambientais da mineração e queimadas no Brasil. Cinco dias de debates, análises e soluções inovadoras para um futuro sustentável.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" id="accessPlatformBtn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Acessar Plataforma
+                    </button>
+                    <button class="btn-secondary" id="learnMoreBtn">
+                        <i class="fas fa-info-circle"></i>
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Grupos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">125</div>
+                    <div class="stat-label">Delegados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Dias de Desafios</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a Simulação</h2>
+                <p>Uma experiência imersiva de diplomacia ambiental e sustentabilidade</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Mineração no Brasil</h3>
+                    <p>Análise dos impactos ambientais, sociais e econômicos da atividade minerária no território brasileiro, com foco em soluções sustentáveis.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Queimadas</h3>
+                    <p>Estudo das causas e consequências das queimadas, especialmente na Amazônia e Pantanal, e estratégias de prevenção e combate.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Diplomacia Ambiental</h3>
+                    <p>Simulação de negociações internacionais, formação de alianças e elaboração de acordos climáticos baseados em cenários reais.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Soluções Inovadoras</h3>
+                    <p>Desenvolvimento de propostas criativas e viáveis para os desafios ambientais, incorporando tecnologia e sustentabilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges" class="challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Desafios Diários</h2>
+                <p>Cinco dias de casos complexos para análise e solução colaborativa</p>
+            </div>
+            <div class="challenges-timeline" id="challengesGrid">
+                <!-- Challenges will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranking Section -->
+    <section id="ranking" class="ranking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ranking dos Grupos</h2>
+                <p>Acompanhe a classificação dos grupos participantes</p>
+            </div>
+            <div class="ranking-table">
+                <div class="ranking-header">
+                    <div class="ranking-col">Posição</div>
+                    <div class="ranking-col">Grupo</div>
+                    <div class="ranking-col">Líder</div>
+                    <div class="ranking-col">Pontuação</div>
+                </div>
+                <div class="ranking-body" id="rankingContainer">
+                    <!-- Ranking will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Acesso à Plataforma</h2>
+                <span class="close-modal" id="closeModal">&times;</span>
+            </div>
+            <p>Entre com as credenciais do seu grupo ou como administrador</p>
+            
+            <div class="tab-container">
+                <button class="tab-btn active" id="groupTab">Grupo</button>
+                <button class="tab-btn" id="adminTab">Administrador</button>
+            </div>
+
+            <!-- Group Login Form -->
+            <div class="form-container" id="groupForm">
+                <div class="form-group">
+                    <label for="groupSelect">Nome do Grupo</label>
+                    <select id="groupSelect">
+                        <option value="">Selecione seu grupo</option>
+                        <option value="1">Grupo 1</option>
+                        <option value="2">Grupo 2</option>
+                        <option value="3">Grupo 3</option>
+                        <option value="4">Grupo 4</option>
+                        <option value="5">Grupo 5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="groupPassword">Senha do Grupo</label>
+                    <input type="password" id="groupPassword" placeholder="Digite a senha do grupo">
+                </div>
+                <button class="btn-primary full-width" id="groupLoginBtn">
+                    <i class="fas fa-users"></i>
+                    Entrar como Grupo
+                </button>
+            </div>
+
+            <!-- Admin Login Form -->
+            <div class="form-container hidden" id="adminForm">
+                <div class="form-group">
+                    <label for="adminUsername">Usuário</label>
+                    <input type="text" id="adminUsername" placeholder="Digite seu usuário">
+                </div>
+                <div class="form-group">
+                    <label for="adminPassword">Senha</label>
+                    <input type="password" id="adminPassword" placeholder="Digite sua senha">
+                </div>
+                <button class="btn-primary full-width" id="adminLoginBtn">
+                    <i class="fas fa-user-shield"></i>
+                    Entrar como Administrador
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Section (Hidden by default) -->
+    <section id="dashboard" class="dashboard hidden">
+        <div class="container">
+            <div class="dashboard-header">
+                <h2 id="dashboardTitle">Dashboard</h2>
+                <button class="btn-secondary" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sair
+                </button>
+            </div>
+            <div class="dashboard-content" id="dashboardContent">
+                <!-- Dashboard content will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
